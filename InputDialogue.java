@@ -1,5 +1,13 @@
 package UIAssembler;
  
+ /*
+ This class creates the graphic user interface for the assembler. It provides the user with two canvas: The one on the 
+ left for typing SIC/SICXE instructions, the one on the right for displaying output after assembly.
+ On the upper left are two radio buttons for switching between SIC and SICXE. on the bottom is a submit button used to 
+ submit code are assembly and a cancel button to clear the left canvas in order to type in new code.
+ This code was created by my project partner, Vo Trang. 
+ */
+ 
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
