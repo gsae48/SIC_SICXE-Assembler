@@ -1,5 +1,10 @@
 package UIAssembler;
 
+/*
+This is the assembler, which is a two pass assmbler able to process both SIC and SICXE. Instructions on how
+to invoke the assembler are found in the README.md file
+*/
+
 import java.util.Hashtable;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
