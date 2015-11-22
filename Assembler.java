@@ -1,8 +1,15 @@
 package UIAssembler;
 
 /*
-This is the assembler, which is a two pass assmbler able to process both SIC and SICXE. Instructions on how
-to invoke the assembler are found in the README.md file
+This is the assembler, which is a two pass assmbler able to process both SIC and SICXE. The assembler recieves
+as input a text file containing SIC or SICXE code. It then outputs two files: errorMsg.txt, and finalAssembly.txt
+errorMsg.txt contains a complete copy of the input file along with any error messages, if there are any. finalAssembly.txt
+contains a comlete copy of the input file along with two additional columns: a location counter column and an object
+code column.
+errorMsg.txt is created during pass one and finalAssembly.txt is created during pass two. If any errors are found in pass one,
+only errorMsg.txt is created and not finalAssembly.txt. If no errors are found in pass one, then errorMsg.txt and 
+finalAssembly.txt are created.
+Instructions on how to invoke the assembler are found in the README.md file
 */
 
 import java.util.Hashtable;
