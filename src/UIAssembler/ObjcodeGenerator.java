@@ -5,7 +5,6 @@ This class is used to generate SIC/SICXE hexidecimal object code for the assembl
 It is invoked as so:
 ObjcodeGenerator generator = new ObjcodeGenerator();
 String myObjcode = generator.generateObjcode("JEQ", 0x30, "CLOOP", 0x0021, 0x00F, 0, 0, 3);
-
 the method generateObjcode, takes in these parameters inorder: The OPCODE, the OPCODE numeric representation, the OPERAND,
 the source address, the destination address, the contents of the base register, the contents of the index register,
 and the format.
